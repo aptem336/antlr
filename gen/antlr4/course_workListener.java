@@ -1,4 +1,4 @@
-// Generated from C:/Users/Artem/Desktop/antlr/src/main/java/antlr4\course_work.g4 by ANTLR 4.7.2
+// Generated from C:/Users/Artem/OneDrive/CODE/_GIT/antlr/src/main/java/antlr4\course_work.g4 by ANTLR 4.7.2
 package antlr4;
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
@@ -88,6 +88,16 @@ public interface course_workListener extends ParseTreeListener {
 	 */
 	void exitSwitch_stat(course_workParser.Switch_statContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link course_workParser#option}.
+	 * @param ctx the parse tree
+	 */
+	void enterOption(course_workParser.OptionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link course_workParser#option}.
+	 * @param ctx the parse tree
+	 */
+	void exitOption(course_workParser.OptionContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link course_workParser#while_stat}.
 	 * @param ctx the parse tree
 	 */
@@ -170,53 +180,15 @@ public interface course_workListener extends ParseTreeListener {
 	 */
 	void exitAdditiveExpr(course_workParser.AdditiveExprContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code numberAtom}
-	 * labeled alternative in {@link course_workParser#atom}.
+	 * Enter a parse tree produced by {@link course_workParser#atom}.
 	 * @param ctx the parse tree
 	 */
-	void enterNumberAtom(course_workParser.NumberAtomContext ctx);
+	void enterAtom(course_workParser.AtomContext ctx);
 	/**
-	 * Exit a parse tree produced by the {@code numberAtom}
-	 * labeled alternative in {@link course_workParser#atom}.
+	 * Exit a parse tree produced by {@link course_workParser#atom}.
 	 * @param ctx the parse tree
 	 */
-	void exitNumberAtom(course_workParser.NumberAtomContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code charAtom}
-	 * labeled alternative in {@link course_workParser#atom}.
-	 * @param ctx the parse tree
-	 */
-	void enterCharAtom(course_workParser.CharAtomContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code charAtom}
-	 * labeled alternative in {@link course_workParser#atom}.
-	 * @param ctx the parse tree
-	 */
-	void exitCharAtom(course_workParser.CharAtomContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code stringAtom}
-	 * labeled alternative in {@link course_workParser#atom}.
-	 * @param ctx the parse tree
-	 */
-	void enterStringAtom(course_workParser.StringAtomContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code stringAtom}
-	 * labeled alternative in {@link course_workParser#atom}.
-	 * @param ctx the parse tree
-	 */
-	void exitStringAtom(course_workParser.StringAtomContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code nullAtom}
-	 * labeled alternative in {@link course_workParser#atom}.
-	 * @param ctx the parse tree
-	 */
-	void enterNullAtom(course_workParser.NullAtomContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code nullAtom}
-	 * labeled alternative in {@link course_workParser#atom}.
-	 * @param ctx the parse tree
-	 */
-	void exitNullAtom(course_workParser.NullAtomContext ctx);
+	void exitAtom(course_workParser.AtomContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code parExprLogic}
 	 * labeled alternative in {@link course_workParser#logic_expr}.
@@ -314,15 +286,13 @@ public interface course_workListener extends ParseTreeListener {
 	 */
 	void exitAtomExprLogic(course_workParser.AtomExprLogicContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code booleanAtom}
-	 * labeled alternative in {@link course_workParser#logic_atom}.
+	 * Enter a parse tree produced by {@link course_workParser#logic_atom}.
 	 * @param ctx the parse tree
 	 */
-	void enterBooleanAtom(course_workParser.BooleanAtomContext ctx);
+	void enterLogic_atom(course_workParser.Logic_atomContext ctx);
 	/**
-	 * Exit a parse tree produced by the {@code booleanAtom}
-	 * labeled alternative in {@link course_workParser#logic_atom}.
+	 * Exit a parse tree produced by {@link course_workParser#logic_atom}.
 	 * @param ctx the parse tree
 	 */
-	void exitBooleanAtom(course_workParser.BooleanAtomContext ctx);
+	void exitLogic_atom(course_workParser.Logic_atomContext ctx);
 }

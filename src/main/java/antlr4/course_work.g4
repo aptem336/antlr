@@ -1,7 +1,15 @@
 grammar course_work;
 
+@members{
+Emitter emitter;
+public course_workParser(CommonTokenStream input, Emitter emitter){
+    this(input);
+    this.emitter = emitter;
+}
+}
+
 parse
- : block EOF
+ : block EOF {emitter.addLine("HALT");}
  ;
 
 block
@@ -10,19 +18,18 @@ block
 
 stat
  : declaration
- | assignment
+ | assignment SCOL
  | if_stat
  | switch_stat
  | while_stat
  ;
 
 declaration
- : (INTEGER_KW|FLOAT_KW|CHAR_KW) ID (ASSIGN expr)? SCOL
- | BOOLEAN_KW ID (ASSIGN logic_expr)? SCOL
+ : (INTEGER_KW|FLOAT_KW|CHAR_KW|BOOLEAN_KW) (ID{emitter.addVariable(_localctx.getText());}|assignment) SCOL
  ;
 
 assignment
- : ID ASSIGN (expr|logic_expr) SCOL
+ : ID {emitter.addVariable(_localctx.getText());emitter.addLine("LVALUE "+_localctx.ID().getText());} ASSIGN (expr|logic_expr) {emitter.addLine(":=");}
  ;
 
 stat_block
@@ -35,7 +42,11 @@ if_stat
  ;
 
 switch_stat
- : SWITCH expr (OBRACE BY atom COL stat_block)+ CBRACE
+ : SWITCH expr {emitter.addLine("RVALUE memory");emitter.addLine(":=");} OBRACE option+ CBRACE
+ ;
+
+option
+ : BY {emitter.addLine("LVALUE memory");} atom {emitter.addLine("=");} COL stat_block
  ;
 
 while_stat
@@ -43,34 +54,31 @@ while_stat
  ;
 
 expr
- : OPAR expr CPAR                   #parExpr
- | MINUS expr                       #unaryMinusExpr
- | expr op=(MULT | DIV | MOD) expr  #multiplicationExpr
- | expr op=(PLUS | MINUS) expr      #additiveExpr
- | atom                             #atomExpr
- | ID                               #id
+ : OPAR expr CPAR                                                                                           #parExpr
+ | expr op=(MULT | DIV) expr  {emitter.addOp(((MultiplicationExprContext)_localctx).op.getText());}         #multiplicationExpr
+ | expr op=(PLUS | MINUS) expr  {emitter.addOp(((AdditiveExprContext)_localctx).op.getText());}             #additiveExpr
+ | MINUS expr                                                                                               #unaryMinusExpr
+ | atom                                                                                                     #atomExpr
+ | ID {emitter.addLine("RVALUE "+((IdContext) _localctx).ID().getText());}                                  #id
  ;
 
 atom
- : (INT | INT4 | FLOAT)  #numberAtom
- | CHAR                  #charAtom
- | STRING                #stringAtom
- | NULL                  #nullAtom
+ : (INT | INT4 | FLOAT | CHAR | STRING | NULL) {emitter.addLine("PUSH "+_localctx.getText());}
  ;
 
 logic_expr
- : OPAR logic_expr CPAR                  #parExprLogic
- | expr op=(LTEQ | GTEQ | LT | GT) expr  #relationalExprLogic
- | expr op=(EQ | NEQ) expr               #equalityExprLogic
- | logic_expr AND logic_expr             #andExprLogic
- | logic_expr OR logic_expr              #orExprLogic
- | NOT logic_expr                        #notExprLogic
- | logic_atom                            #atomExprLogic
- | ID                                    #idLogic
+ : OPAR logic_expr CPAR                                                                                             #parExprLogic
+ | expr op=(LTEQ | GTEQ | LT | GT) expr {emitter.addLine(((RelationalExprLogicContext)_localctx).op.getText());}    #relationalExprLogic
+ | expr op=(EQ | NEQ) expr  {emitter.addLine(((EqualityExprLogicContext)_localctx).op.getText());}                  #equalityExprLogic
+ | logic_expr AND logic_expr    {emitter.addLine("OR");}                                                            #andExprLogic
+ | logic_expr OR logic_expr {emitter.addLine("AND");}                                                               #orExprLogic
+ | NOT logic_expr                                                                                                   #notExprLogic
+ | logic_atom                                                                                                       #atomExprLogic
+ | ID {emitter.addLine("RVALUE "+((IdLogicContext) _localctx).ID().getText());}                                     #idLogic
  ;
 
 logic_atom
- : (TRUE | FALSE)  #booleanAtom
+ : (TRUE | FALSE) {emitter.addLine("PUSH "+_localctx.getText());}
  ;
 
 INTEGER_KW : 'int'('e'('g'('e'('r')?)?)?)?;
@@ -90,7 +98,6 @@ PLUS : '+';
 MINUS : '-';
 MULT : '*';
 DIV : '/';
-MOD : '%';
 NOT : '!';
 
 SCOL : ';';

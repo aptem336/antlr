@@ -1,4 +1,4 @@
-// Generated from C:/Users/Artem/Desktop/antlr/src/main/java/antlr4\course_work.g4 by ANTLR 4.7.2
+// Generated from C:/Users/Artem/OneDrive/CODE/_GIT/antlr/src/main/java/antlr4\course_work.g4 by ANTLR 4.7.2
 package antlr4;
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
@@ -59,6 +59,12 @@ public interface course_workVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitSwitch_stat(course_workParser.Switch_statContext ctx);
 	/**
+	 * Visit a parse tree produced by {@link course_workParser#option}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitOption(course_workParser.OptionContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link course_workParser#while_stat}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
@@ -107,33 +113,11 @@ public interface course_workVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitAdditiveExpr(course_workParser.AdditiveExprContext ctx);
 	/**
-	 * Visit a parse tree produced by the {@code numberAtom}
-	 * labeled alternative in {@link course_workParser#atom}.
+	 * Visit a parse tree produced by {@link course_workParser#atom}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitNumberAtom(course_workParser.NumberAtomContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code charAtom}
-	 * labeled alternative in {@link course_workParser#atom}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitCharAtom(course_workParser.CharAtomContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code stringAtom}
-	 * labeled alternative in {@link course_workParser#atom}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitStringAtom(course_workParser.StringAtomContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code nullAtom}
-	 * labeled alternative in {@link course_workParser#atom}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitNullAtom(course_workParser.NullAtomContext ctx);
+	T visitAtom(course_workParser.AtomContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code parExprLogic}
 	 * labeled alternative in {@link course_workParser#logic_expr}.
@@ -191,10 +175,9 @@ public interface course_workVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitAtomExprLogic(course_workParser.AtomExprLogicContext ctx);
 	/**
-	 * Visit a parse tree produced by the {@code booleanAtom}
-	 * labeled alternative in {@link course_workParser#logic_atom}.
+	 * Visit a parse tree produced by {@link course_workParser#logic_atom}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitBooleanAtom(course_workParser.BooleanAtomContext ctx);
+	T visitLogic_atom(course_workParser.Logic_atomContext ctx);
 }

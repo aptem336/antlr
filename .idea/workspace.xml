@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1683a99-77f1-4b7f-9ef4-4599a0dba923" name="Default Changelist" comment="" />
+    <list default="true" id="c1683a99-77f1-4b7f-9ef4-4599a0dba923" name="Default Changelist" comment="change grammar">
+      <change afterPath="$PROJECT_DIR$/gen/antlr4/Emitter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/antlr4/course_work.interp" beforeDir="false" afterPath="$PROJECT_DIR$/gen/antlr4/course_work.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/antlr4/course_work.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/gen/antlr4/course_work.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/antlr4/course_workBaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/antlr4/course_workBaseListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/antlr4/course_workBaseVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/antlr4/course_workBaseVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/antlr4/course_workLexer.interp" beforeDir="false" afterPath="$PROJECT_DIR$/gen/antlr4/course_workLexer.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/antlr4/course_workLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/antlr4/course_workLexer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/antlr4/course_workLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/gen/antlr4/course_workLexer.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/antlr4/course_workListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/antlr4/course_workListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/antlr4/course_workParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/antlr4/course_workParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/antlr4/course_workVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/antlr4/course_workVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/antlr4/course_workWalker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/antlr4/course_work.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/antlr4/course_work.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/antlr4/course_work.interp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/antlr4/course_work.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/antlr4/course_work.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/antlr4/course_work.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/antlr4/course_workLexer.interp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/antlr4/course_workLexer.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/antlr4/course_workLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/antlr4/course_workLexer.tokens" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,17 +34,73 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/antlr4/course_work.g4">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="60" column="10" selection-start-line="60" selection-end-line="60" selection-end-column="10" />
+            <state relative-caret-position="714">
+              <caret line="48" column="85" selection-start-line="48" selection-start-column="85" selection-end-line="48" selection-end-column="85" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gen/antlr4/course_workLexer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1428">
+              <caret line="95" selection-start-line="95" selection-end-line="95" />
+              <folding>
+                <element signature="e#3368#3369#0" expanded="true" />
+                <element signature="e#3392#3393#0" expanded="true" />
+                <element signature="e#3442#3443#0" expanded="true" />
+                <element signature="e#3466#3467#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gen/antlr4/course_workParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22338">
+              <caret line="1437" column="87" selection-start-line="1437" selection-start-column="87" selection-end-line="1437" selection-end-column="87" />
+              <folding>
+                <element signature="e#3300#3301#0" expanded="true" />
+                <element signature="e#3324#3325#0" expanded="true" />
+                <element signature="e#3374#3375#0" expanded="true" />
+                <element signature="e#3398#3399#0" expanded="true" />
+                <element signature="e#4047#4048#0" expanded="true" />
+                <element signature="e#4099#4100#0" expanded="true" />
+                <element signature="e#4243#4244#0" expanded="true" />
+                <element signature="e#4280#4281#0" expanded="true" />
+                <element signature="e#5526#5527#0" expanded="true" />
+                <element signature="e#5576#5577#0" expanded="true" />
+                <element signature="e#5611#5612#0" expanded="true" />
+                <element signature="e#5662#5663#0" expanded="true" />
+                <element signature="e#5731#5732#0" expanded="true" />
+                <element signature="e#5768#5769#0" expanded="true" />
+                <element signature="e#7340#7341#0" expanded="true" />
+                <element signature="e#7398#7399#0" expanded="true" />
+                <element signature="e#7440#7441#0" expanded="true" />
+                <element signature="e#7497#7498#0" expanded="true" />
+                <element signature="e#7610#7611#0" expanded="true" />
+                <element signature="e#7664#7665#0" expanded="true" />
+                <element signature="e#7708#7709#0" expanded="true" />
+                <element signature="e#7766#7767#0" expanded="true" />
+                <element signature="e#7808#7809#0" expanded="true" />
+                <element signature="e#7865#7866#0" expanded="true" />
+                <element signature="e#7933#7934#0" expanded="true" />
+                <element signature="e#7970#7971#0" expanded="true" />
+                <element signature="e#10341#10342#0" expanded="true" />
+                <element signature="e#10398#10399#0" expanded="true" />
+                <element signature="e#10473#10474#0" expanded="true" />
+                <element signature="e#10510#10511#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gen/antlr4/course_workWalker.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3383">
-              <caret line="199" selection-start-line="199" selection-end-line="199" />
+            <state relative-caret-position="119">
+              <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -33,12 +109,14 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+        <entry file="file://$PROJECT_DIR$/gen/antlr4/Emitter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+            <state relative-caret-position="172">
+              <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#466#467#0" expanded="true" />
+                <element signature="e#507#508#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -55,21 +133,43 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>emitt</find>
       <find>exp</find>
       <find>logic</find>
+      <find>log</find>
+      <find>atom</find>
+      <find>emitt</find>
+      <find>addC</find>
+      <find>op</find>
+      <find>LVA</find>
+      <find>addCommand</find>
+      <find>add</find>
+      <find>option</find>
+      <find>parap</find>
+      <find>LVAL</find>
+      <find>RVALUE</find>
+      <find>.ID().getText());</find>
+      <find>51</find>
     </findStrings>
+    <replaceStrings>
+      <replace>add</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/gen/antlr4/course_workEmitter.java" />
         <option value="$PROJECT_DIR$/gen/antlr4/Listener.java" />
+        <option value="$PROJECT_DIR$/gen/antlr4/course_workWalker.java" />
+        <option value="$PROJECT_DIR$/gen/antlr4/visitor.java" />
+        <option value="$PROJECT_DIR$/gen/antlr4/listener.java" />
         <option value="$PROJECT_DIR$/gen/antlr4/course_workParser.java" />
         <option value="$PROJECT_DIR$/gen/antlr4/Emitter.java" />
         <option value="$PROJECT_DIR$/src/main/java/antlr4/course_work.g4" />
+        <option value="$PROJECT_DIR$/gen/antlr4/course_workLexer.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
-        <option value="$PROJECT_DIR$/gen/antlr4/course_workWalker.java" />
       </list>
     </option>
   </component>
@@ -85,8 +185,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="85" />
-    <option name="y" value="25" />
+    <option name="x" value="35" />
+    <option name="y" value="-18" />
     <option name="width" value="1750" />
     <option name="height" value="980" />
   </component>
@@ -95,6 +195,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -139,17 +240,27 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="antlr4" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="antlr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="antlr" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="antlr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="antlr" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546684445190" />
-    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/CODE/WIP/course_work.g4" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546710163451" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../WORK/ИнформСервис/3/627732-ПОСЛЕ-1.xml" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
@@ -204,17 +315,16 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25973153" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27114093" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.25354108" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -223,16 +333,21 @@
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Tool Output" order="10" weight="0.3286119" />
-      <window_info anchor="bottom" id="ANTLR Preview" order="11" weight="0.48441926" />
+      <window_info anchor="bottom" id="ANTLR Preview" order="11" weight="0.40084985" />
+      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.19688386" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24966443" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" weight="0.3295302" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven" order="7" weight="0.3295302" />
     </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="change grammar" />
+    <option name="LAST_COMMIT_MESSAGE" value="change grammar" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/gen/HelloListener.java" />
@@ -240,20 +355,11 @@
     <entry file="file://$PROJECT_DIR$/gen/Hello.tokens" />
     <entry file="file://$PROJECT_DIR$/gen/HelloBaseListener.java" />
     <entry file="file://$PROJECT_DIR$/gen/HelloLexer.java" />
-    <entry file="file://$USER_HOME$/OneDrive/CODE/WIP/course_work.g4">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../WIP/course_work.g4" />
     <entry file="file://$PROJECT_DIR$/gen/HelloWalker.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/antlr4/Hello.g4" />
     <entry file="file://$PROJECT_DIR$/gen/antlr4/course_work.interp">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gen/antlr4/Emitter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gen/antlr4/course_workListener.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -262,44 +368,114 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gen/antlr4/course_workParser.java">
+    <entry file="file://$PROJECT_DIR$/gen/antlr4/visitor.java" />
+    <entry file="file://$PROJECT_DIR$/gen/antlr4/course_workVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4896">
-          <caret line="325" selection-start-line="325" selection-end-line="325" />
+        <state relative-caret-position="85">
+          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen/antlr4/listener.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/antlr/antlr4-runtime/4.7/antlr4-runtime-4.7.jar!/org/antlr/v4/runtime/Parser.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="76" column="38" selection-start-line="76" selection-start-column="38" selection-end-line="76" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/antlr/antlr4-runtime/4.7/antlr4-runtime-4.7.jar!/org/antlr/v4/runtime/DefaultErrorStrategy.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/antlr4/course_work.g4">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="48" column="85" selection-start-line="48" selection-start-column="85" selection-end-line="48" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen/antlr4/course_workLexer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1428">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
           <folding>
-            <element signature="e#10469#10470#0" expanded="true" />
+            <element signature="e#3368#3369#0" expanded="true" />
+            <element signature="e#3392#3393#0" expanded="true" />
+            <element signature="e#3442#3443#0" expanded="true" />
+            <element signature="e#3466#3467#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gen/antlr4/course_workVisitor.java">
+    <entry file="file://$PROJECT_DIR$/gen/antlr4/course_workParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-238">
-          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+        <state relative-caret-position="22338">
+          <caret line="1437" column="87" selection-start-line="1437" selection-start-column="87" selection-end-line="1437" selection-end-column="87" />
+          <folding>
+            <element signature="e#3300#3301#0" expanded="true" />
+            <element signature="e#3324#3325#0" expanded="true" />
+            <element signature="e#3374#3375#0" expanded="true" />
+            <element signature="e#3398#3399#0" expanded="true" />
+            <element signature="e#4047#4048#0" expanded="true" />
+            <element signature="e#4099#4100#0" expanded="true" />
+            <element signature="e#4243#4244#0" expanded="true" />
+            <element signature="e#4280#4281#0" expanded="true" />
+            <element signature="e#5526#5527#0" expanded="true" />
+            <element signature="e#5576#5577#0" expanded="true" />
+            <element signature="e#5611#5612#0" expanded="true" />
+            <element signature="e#5662#5663#0" expanded="true" />
+            <element signature="e#5731#5732#0" expanded="true" />
+            <element signature="e#5768#5769#0" expanded="true" />
+            <element signature="e#7340#7341#0" expanded="true" />
+            <element signature="e#7398#7399#0" expanded="true" />
+            <element signature="e#7440#7441#0" expanded="true" />
+            <element signature="e#7497#7498#0" expanded="true" />
+            <element signature="e#7610#7611#0" expanded="true" />
+            <element signature="e#7664#7665#0" expanded="true" />
+            <element signature="e#7708#7709#0" expanded="true" />
+            <element signature="e#7766#7767#0" expanded="true" />
+            <element signature="e#7808#7809#0" expanded="true" />
+            <element signature="e#7865#7866#0" expanded="true" />
+            <element signature="e#7933#7934#0" expanded="true" />
+            <element signature="e#7970#7971#0" expanded="true" />
+            <element signature="e#10341#10342#0" expanded="true" />
+            <element signature="e#10398#10399#0" expanded="true" />
+            <element signature="e#10473#10474#0" expanded="true" />
+            <element signature="e#10510#10511#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../WORK/ИнформСервис/3/627732-ПОСЛЕ-1.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../WORK/ИнформСервис/3/627732-ДО-1.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen/antlr4/Emitter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#466#467#0" expanded="true" />
+            <element signature="e#507#508#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/antlr4/course_work.g4">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="60" column="10" selection-start-line="60" selection-end-line="60" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gen/antlr4/course_workWalker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3383">
-          <caret line="199" selection-start-line="199" selection-end-line="199" />
+        <state relative-caret-position="119">
+          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

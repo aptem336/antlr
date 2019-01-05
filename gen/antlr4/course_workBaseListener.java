@@ -1,4 +1,4 @@
-// Generated from C:/Users/Artem/Desktop/antlr/src/main/java/antlr4\course_work.g4 by ANTLR 4.7.2
+// Generated from C:/Users/Artem/OneDrive/CODE/_GIT/antlr/src/main/java/antlr4\course_work.g4 by ANTLR 4.7.2
 package antlr4;
 
 import org.antlr.v4.runtime.ParserRuleContext;
@@ -112,6 +112,18 @@ public class course_workBaseListener implements course_workListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterOption(course_workParser.OptionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitOption(course_workParser.OptionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterWhile_stat(course_workParser.While_statContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -196,49 +208,13 @@ public class course_workBaseListener implements course_workListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterNumberAtom(course_workParser.NumberAtomContext ctx) { }
+	@Override public void enterAtom(course_workParser.AtomContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitNumberAtom(course_workParser.NumberAtomContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterCharAtom(course_workParser.CharAtomContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitCharAtom(course_workParser.CharAtomContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterStringAtom(course_workParser.StringAtomContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitStringAtom(course_workParser.StringAtomContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterNullAtom(course_workParser.NullAtomContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitNullAtom(course_workParser.NullAtomContext ctx) { }
+	@Override public void exitAtom(course_workParser.AtomContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -340,13 +316,13 @@ public class course_workBaseListener implements course_workListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterBooleanAtom(course_workParser.BooleanAtomContext ctx) { }
+	@Override public void enterLogic_atom(course_workParser.Logic_atomContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitBooleanAtom(course_workParser.BooleanAtomContext ctx) { }
+	@Override public void exitLogic_atom(course_workParser.Logic_atomContext ctx) { }
 
 	/**
 	 * {@inheritDoc}
