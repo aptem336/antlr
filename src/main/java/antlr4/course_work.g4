@@ -33,7 +33,7 @@ stat_block
  ;
 
 if_stat
- : QMARK logic_expr {String if_break_label=" IF_"+if_label_counter;if_label_counter++;Emitter.addLine("GOFALSE"+if_break_label);} SHARP stat_block {Emitter.addLine("LABEL"+if_break_label+":");} (COL stat_block)?
+ : QMARK logic_expr {String if_else_label=" IFE_"+if_label_counter; String if_break_label=" IFB_"+if_label_counter;if_label_counter++;Emitter.addLine("GOFALSE"+if_else_label);} SHARP stat_block {Emitter.addLine("GOTO"+if_break_label);Emitter.addLine("LABEL"+if_else_label+":");}(COL stat_block)? {Emitter.addLine("LABEL"+if_break_label+":");}
  ;
 
 switch_stat

@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         String source =
                 "int a11s; int a22f;\n" +
-                "while(a11s>a22f) do a22f:=a22f+1;";
+                "?(a11s>a22f)#a22f:=a22f+1;:a11s:=1;";
         course_workLexer lexer = new course_workLexer(CharStreams.fromString(source));
         CommonTokenStream tokens = new CommonTokenStream(lexer);
         course_workParser parser = new course_workParser(tokens);
