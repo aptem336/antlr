@@ -8,25 +8,15 @@ import org.antlr.v4.runtime.tree.ParseTreeListener;
  */
 public interface course_workListener extends ParseTreeListener {
 	/**
-	 * Enter a parse tree produced by {@link course_workParser#parse}.
+	 * Enter a parse tree produced by {@link course_workParser#programm}.
 	 * @param ctx the parse tree
 	 */
-	void enterParse(course_workParser.ParseContext ctx);
+	void enterProgramm(course_workParser.ProgrammContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link course_workParser#parse}.
+	 * Exit a parse tree produced by {@link course_workParser#programm}.
 	 * @param ctx the parse tree
 	 */
-	void exitParse(course_workParser.ParseContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link course_workParser#block}.
-	 * @param ctx the parse tree
-	 */
-	void enterBlock(course_workParser.BlockContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link course_workParser#block}.
-	 * @param ctx the parse tree
-	 */
-	void exitBlock(course_workParser.BlockContext ctx);
+	void exitProgramm(course_workParser.ProgrammContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link course_workParser#stat}.
 	 * @param ctx the parse tree
@@ -120,18 +110,6 @@ public interface course_workListener extends ParseTreeListener {
 	 */
 	void exitParExpr(course_workParser.ParExprContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code unaryMinusExpr}
-	 * labeled alternative in {@link course_workParser#expr}.
-	 * @param ctx the parse tree
-	 */
-	void enterUnaryMinusExpr(course_workParser.UnaryMinusExprContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code unaryMinusExpr}
-	 * labeled alternative in {@link course_workParser#expr}.
-	 * @param ctx the parse tree
-	 */
-	void exitUnaryMinusExpr(course_workParser.UnaryMinusExprContext ctx);
-	/**
 	 * Enter a parse tree produced by the {@code multiplicationExpr}
 	 * labeled alternative in {@link course_workParser#expr}.
 	 * @param ctx the parse tree
@@ -179,6 +157,18 @@ public interface course_workListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitAdditiveExpr(course_workParser.AdditiveExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code minusExpr}
+	 * labeled alternative in {@link course_workParser#expr}.
+	 * @param ctx the parse tree
+	 */
+	void enterMinusExpr(course_workParser.MinusExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code minusExpr}
+	 * labeled alternative in {@link course_workParser#expr}.
+	 * @param ctx the parse tree
+	 */
+	void exitMinusExpr(course_workParser.MinusExprContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link course_workParser#atom}.
 	 * @param ctx the parse tree

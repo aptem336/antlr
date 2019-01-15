@@ -1,26 +1,19 @@
 package antlr4;
 
 import java.util.ArrayList;
-import java.util.Stack;
+import java.util.HashMap;
+import java.util.Set;
 
 public class Emitter {
 
-    private ArrayList<String> variables = new ArrayList<>();
-    private StringBuilder builder = new StringBuilder();
-    private int label_counter = 0;
-    private Stack<String> labels = new Stack<>();
+    private static StringBuilder builder = new StringBuilder();
+    private static HashMap<String, String> variables = new HashMap<>();
 
-    public void addVariable(String name){
-        if (!variables.contains(name)){
-            variables.add(name);
-        }
-    }
-
-    public void addLine(String line){
+    public static void addLine(String line){
         builder.append(line+"\n");
     }
 
-    public void addOp(String op){
+    public static void addOp(String op){
         switch (op){
             case "+":
                 op = "ADD";
@@ -38,11 +31,17 @@ public class Emitter {
         addLine(op);
     }
 
-    public void print(){
-        for (String variable:variables) {
-            System.out.println(variable);
+    public static void addVariable(String name, String type){
+        variables.put(name, type);
+    }
+
+    public static void print(){
+        Set<String> keySet = variables.keySet();
+        for (String key : keySet) {
+            System.out.println(key+" "+variables.get(key));
         }
         System.out.println();
         System.out.println(builder);
+
     }
 }

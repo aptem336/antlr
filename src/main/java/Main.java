@@ -7,12 +7,15 @@ import org.antlr.v4.runtime.CommonTokenStream;
 public class Main {
     public static void main(String[] args) {
         String source =
-                "integer a1a := 1; while (a1a<10) do {a1a:=a1b+1;}";
+                "int a11s; int a22f;\n" +
+                "while(a11s>a22f) do a22f:=a22f+1;";
         course_workLexer lexer = new course_workLexer(CharStreams.fromString(source));
         CommonTokenStream tokens = new CommonTokenStream(lexer);
-        Emitter emitter = new Emitter();
-        course_workParser parser = new course_workParser(tokens, emitter);
-        parser.parse();
-        emitter.print();
+        course_workParser parser = new course_workParser(tokens);
+        System.out.println(source+"\n");
+        parser.programm();
+        if (parser.getNumberOfSyntaxErrors()==0){
+            Emitter.print();
+        }
     }
 }

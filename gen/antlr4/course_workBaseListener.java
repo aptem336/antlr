@@ -16,25 +16,13 @@ public class course_workBaseListener implements course_workListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterParse(course_workParser.ParseContext ctx) { }
+	@Override public void enterProgramm(course_workParser.ProgrammContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitParse(course_workParser.ParseContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterBlock(course_workParser.BlockContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitBlock(course_workParser.BlockContext ctx) { }
+	@Override public void exitProgramm(course_workParser.ProgrammContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -148,18 +136,6 @@ public class course_workBaseListener implements course_workListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterUnaryMinusExpr(course_workParser.UnaryMinusExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitUnaryMinusExpr(course_workParser.UnaryMinusExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
 	@Override public void enterMultiplicationExpr(course_workParser.MultiplicationExprContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -203,6 +179,18 @@ public class course_workBaseListener implements course_workListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitAdditiveExpr(course_workParser.AdditiveExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterMinusExpr(course_workParser.MinusExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitMinusExpr(course_workParser.MinusExprContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

@@ -11,17 +11,11 @@ import org.antlr.v4.runtime.tree.ParseTreeVisitor;
  */
 public interface course_workVisitor<T> extends ParseTreeVisitor<T> {
 	/**
-	 * Visit a parse tree produced by {@link course_workParser#parse}.
+	 * Visit a parse tree produced by {@link course_workParser#programm}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitParse(course_workParser.ParseContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link course_workParser#block}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitBlock(course_workParser.BlockContext ctx);
+	T visitProgramm(course_workParser.ProgrammContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link course_workParser#stat}.
 	 * @param ctx the parse tree
@@ -78,13 +72,6 @@ public interface course_workVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitParExpr(course_workParser.ParExprContext ctx);
 	/**
-	 * Visit a parse tree produced by the {@code unaryMinusExpr}
-	 * labeled alternative in {@link course_workParser#expr}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitUnaryMinusExpr(course_workParser.UnaryMinusExprContext ctx);
-	/**
 	 * Visit a parse tree produced by the {@code multiplicationExpr}
 	 * labeled alternative in {@link course_workParser#expr}.
 	 * @param ctx the parse tree
@@ -112,6 +99,13 @@ public interface course_workVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitAdditiveExpr(course_workParser.AdditiveExprContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code minusExpr}
+	 * labeled alternative in {@link course_workParser#expr}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitMinusExpr(course_workParser.MinusExprContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link course_workParser#atom}.
 	 * @param ctx the parse tree
