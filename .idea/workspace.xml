@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c1683a99-77f1-4b7f-9ef4-4599a0dba923" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/antlr4/course_work.interp" beforeDir="false" afterPath="$PROJECT_DIR$/gen/antlr4/course_work.interp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/antlr4/course_workParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/antlr4/course_workParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/antlr4/course_work.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/antlr4/course_work.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/antlr4/course_work.interp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/antlr4/course_work.interp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -192,7 +187,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547214332607" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547537855133" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
@@ -240,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1546710185760</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fix if_stat mistake">
+      <created>1547537855171</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1547537855171</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -266,7 +268,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.5892351" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.6203966" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.6203966" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
@@ -288,7 +290,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="change grammar" />
-    <option name="LAST_COMMIT_MESSAGE" value="change grammar" />
+    <MESSAGE value="fix if_stat mistake" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix if_stat mistake" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/gen/HelloListener.java" />
