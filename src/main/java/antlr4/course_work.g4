@@ -1,13 +1,13 @@
 grammar course_work;
 
 @parser::members{
-private int if_label_counter = 0;
-private int while_label_counter = 0;
-private int switch_label_counter = 0;
+int if_label_counter = 0;
+int switch_label_counter = 0;
+int repeat_label_counter = 0;
 }
 
 programm
- : stat* EOF {Emitter.addLine("HALT");}
+ : stat* {Emitter.addLine("HALT");}
  ;
 
 stat
@@ -15,103 +15,91 @@ stat
  | assignment
  | if_stat
  | switch_stat
- | while_stat
+ | repeat_stat
  | SCOL
  ;
 
-declaration
- : {String type;}(INTEGER_KW{type="DW";}|FLOAT_KW{type="DD";}|CHAR_KW{type="DB";}|BOOLEAN_KW{type="DW";}) ID {Emitter.addVariable(_localctx.ID().getText(), type);} ({Emitter.addLine("LVALUE "+_localctx.ID().getText());} ASSIGN (expr | logic_expr) {Emitter.addLine(":=");})? SCOL
- ;
-
 assignment
- : ID {Emitter.addLine("LVALUE "+_localctx.ID().getText());} ASSIGN (expr | logic_expr) {Emitter.addLine(":=");} SCOL
- ;
-
-stat_block
- : OBRACE programm CBRACE
- | stat
+ : ID LTEQ (expr | logic_expr) {Emitter.addLine("LVALUE "+_localctx.ID().getText());Emitter.addLine(":=");} SCOL
  ;
 
 if_stat
- : QMARK logic_expr {String if_else_label=" IFE_"+if_label_counter; String if_break_label=" IFB_"+if_label_counter;if_label_counter++;Emitter.addLine("GOFALSE"+if_else_label);} SHARP stat_block {Emitter.addLine("GOTO"+if_break_label);Emitter.addLine("LABEL"+if_else_label+":");}(COL stat_block)? {Emitter.addLine("LABEL"+if_break_label+":");}
+  : {String IEL=" IE"+if_label_counter; String IBL = " IB"+if_label_counter; if_label_counter++;} QMARK logic_expr {Emitter.addLine("GOFALSE "+IEL);} SHARP stat_block {Emitter.addLine("GOTO "+IBL);Emitter.addLine("LABEL "+IEL+":");}(COL stat_block)? {Emitter.addLine("LABEL "+IBL+":");}
+  ;
+
+QMARK : '?';
+SHARP: '#';
+
+stat_block
+ : OBRACE stat* CBRACE
+ | stat
  ;
 
 switch_stat
- : SWITCH expr {Emitter.addLine("LVALUE mem");Emitter.addLine(":=");} OBRACE option+ CBRACE
+ : {int case_label_counter=0;} SWITCH expr {Emitter.addLine("LVALUE memory");Emitter.addLine(":=");} OBRACE (BY atom {Emitter.addLine("RVALUE memory");Emitter.addLine("PUSH "+_localctx.atom().get(0).getText());Emitter.addLine("=");Emitter.addLine("GOFALSE SC"+switch_label_counter+""+case_label_counter);} COL stat_block {Emitter.addLine("GOTO SB"+switch_label_counter);Emitter.addLine("LABEL SC"+switch_label_counter+""+case_label_counter+":");case_label_counter++;})* CBRACE {Emitter.addLine("LABEL SB"+switch_label_counter+":");switch_label_counter++;}
  ;
 
-option
- : BY {String option_label=" OP_"+switch_label_counter;switch_label_counter++;Emitter.addLine("RVALUE mem");} atom {Emitter.addLine("=");Emitter.addLine("GOFALSE"+option_label);} COL stat_block {Emitter.addLine("LABEL"+option_label+":");}
+SWITCH : 'switch';
+BY: 'by';
+
+repeat_stat
+ : {String RSL="RS"+repeat_label_counter;repeat_label_counter++;} REPEAT {Emitter.addLine("LABEL "+RSL+":");} stat_block WHEN logic_expr {Emitter.addLine("GOTRUE "+RSL);}
  ;
 
-while_stat
- : WHILE {String while_start_label=" WS_"+while_label_counter;String while_break_label=" WB_"+while_label_counter;while_label_counter++;} OPAR logic_expr CPAR {Emitter.addLine("GOFALSE"+while_break_label);Emitter.addLine("LABEL"+while_start_label+":");} DO stat_block {Emitter.addLine("GOTO"+while_start_label);Emitter.addLine("LABEL"+while_break_label+":");}
+REPEAT : 'repeat';
+WHEN: 'when';
+
+declaration
+ : {String type="";}(NUMBER_KW{type="DW";}|REAL_KW{type="DD";}|CHAR_KW{type="DB";}|BOOLEAN_KW{type="DW";}) ID {String name=_localctx.ID().getText();Emitter.addVariable(name, type);} (LTEQ (expr | logic_expr) {Emitter.addLine("LVALUE "+_localctx.ID().getText());Emitter.addLine(":=");})? SCOL
  ;
 
-expr
- : OPAR expr CPAR                                                                                           #parExpr
- | expr op=(MULT | DIV) expr  {Emitter.addOp(((MultiplicationExprContext)_localctx).op.getText());}         #multiplicationExpr
- | expr op=(PLUS | MINUS) expr  {Emitter.addOp(((AdditiveExprContext)_localctx).op.getText());}             #additiveExpr
- | atom                                                                                                     #atomExpr
- | MINUS expr                                                                                               #minusExpr
- | ID {Emitter.addLine("RVALUE "+((IdContext) _localctx).ID().getText());}                                  #id
- ;
-
-atom
- : (INT | INT4 | FLOAT | CHAR | NULL) {Emitter.addLine("PUSH "+_localctx.getText());}
- ;
-
-logic_expr
- : OPAR logic_expr CPAR                                                                                             #parExprLogic
- | expr op=(LTEQ | GTEQ | LT | GT) expr {Emitter.addLine(((RelationalExprLogicContext)_localctx).op.getText());}    #relationalExprLogic
- | expr op=(EQ | NEQ) expr  {Emitter.addLine(((EqualityExprLogicContext)_localctx).op.getText());}                  #equalityExprLogic
- | logic_expr AND logic_expr    {Emitter.addLine("OR");}                                                            #andExprLogic
- | logic_expr OR logic_expr {Emitter.addLine("AND");}                                                               #orExprLogic
- | logic_atom                                                                                                       #atomExprLogic
- | NOT logic_expr                                                                                                   #notExprLogic
- | ID {Emitter.addLine("RVALUE "+((IdLogicContext) _localctx).ID().getText());}                                     #idLogic
- ;
-
-logic_atom
- : (TRUE | FALSE) {Emitter.addLine("PUSH "+_localctx.getText());}
- ;
-
-INTEGER_KW : 'int'('e'('g'('e'('r')?)?)?)?;
-FLOAT_KW : 'float';
-CHAR_KW : 'char';
+NUMBER_KW : 'number';
+REAL_KW : 'real';
+CHAR_KW : 'char'('a'('c'('t'('e'('r')?)?)?)?)?;
 BOOLEAN_KW: 'bool';
 
-NOT : '!';
-OR : '||';
-AND : '&&';
-EQ : '==';
-NEQ : '!=';
-GT : '>';
-LT : '<';
-GTEQ : '>=';
-LTEQ : '<=';
+expr
+ : OPAR expr CPAR #parExpr
+ | expr op=(MULT|DIV) expr {Emitter.addOp(((MultiplicationExprContext) _localctx).op.getText());} #multiplicationExpr
+ | expr op=(PLUS|MINUS) expr {Emitter.addOp(((AdditiveExprContext) _localctx).op.getText());} #additiveExpr
+ | atom {Emitter.addLine("PUSH "+_localctx.getText());} #atomExpr
+ | ID {Emitter.addLine("RVALUE "+_localctx.getText());} #id
+ ;
+
 PLUS : '+';
 MINUS : '-';
 MULT : '*';
 DIV : '/';
 
-OPAR : '(';
-CPAR : ')';
-OBRACE : '{';
-CBRACE : '}';
+atom
+ : (INT|INT5|FLOAT|CHAR|NULL)
+ ;
 
-SCOL : ';';
-ASSIGN : ':=';
-TRUE : 'true';
-FALSE : 'false';
-NULL : 'null';
-QMARK : '?';
-SHARP: '#';
-COL : ':';
-SWITCH : 'switch';
-BY: 'by';
-WHILE : 'while';
-DO: 'do';
+logic_expr
+ : OPAR logic_expr CPAR #parExprLogic
+ | expr op=(LTEQ | GTEQ | LT | GT) expr {Emitter.addLine(((RelationalExprLogicContext) _localctx).op.getText());} #relationalExprLogic
+ | expr op=(EQ | NEQ) expr {Emitter.addLine(((RelationalExprLogicContext) _localctx).op.getText());} #equalityExprLogic
+ | logic_expr AND logic_expr {Emitter.addLine("AND");} #andExprLogic
+ | logic_expr OR logic_expr {Emitter.addLine("OR");} #orExprLogic
+ | logic_atom {Emitter.addLine("PUSH "+_localctx.getText());} #atomExprLogic
+ | ID {Emitter.addLine("RVALUE "+_localctx.getText());} #idLogic
+ ;
+
+LTEQ : '<=';
+GTEQ : '>=';
+
+LT : '<';
+GT : '>';
+
+EQ : '=';
+NEQ : '<>';
+
+AND : '&&';
+OR : '||';
+
+logic_atom
+ : (YES|NO)
+ ;
 
 ID
  : [a-zA-Z_]INT[a-zA-Z_]
@@ -120,17 +108,32 @@ ID
 INT
  : [0-9]+
  ;
-INT4
- : '4x'[0-3]+
- ;
 
 FLOAT
- : INT'.'INT'f'?
+ : (INT|'.'INT|INT'.'INT)'f'?
  ;
 
 CHAR
  : '\''~['\r\n]'\''
  ;
+
+INT5
+ : '5x'[0-4]+
+ ;
+
+YES : 'YES';
+NO : 'NO';
+
+NULL : 'null';
+
+COL : ':';
+SCOL : ';';
+
+OPAR : '(';
+CPAR : ')';
+
+OBRACE : '{';
+CBRACE : '}';
 
 SPACE
  : [ \t\r\n] -> skip

@@ -1,4 +1,4 @@
-// Generated from C:/Users/Artem/OneDrive/CODE/_GIT/antlr/src/main/java/antlr4\course_work.g4 by ANTLR 4.7.2
+// Generated from C:/Users/Artem/OneDrive/WORK/Âàñèëèé/ÒèÏÑ/ÒèÏÑ_Ê/antlr/src/main/java/antlr4\course_work.g4 by ANTLR 4.7.2
 package antlr4;
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
@@ -28,16 +28,6 @@ public interface course_workListener extends ParseTreeListener {
 	 */
 	void exitStat(course_workParser.StatContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link course_workParser#declaration}.
-	 * @param ctx the parse tree
-	 */
-	void enterDeclaration(course_workParser.DeclarationContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link course_workParser#declaration}.
-	 * @param ctx the parse tree
-	 */
-	void exitDeclaration(course_workParser.DeclarationContext ctx);
-	/**
 	 * Enter a parse tree produced by {@link course_workParser#assignment}.
 	 * @param ctx the parse tree
 	 */
@@ -47,16 +37,6 @@ public interface course_workListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitAssignment(course_workParser.AssignmentContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link course_workParser#stat_block}.
-	 * @param ctx the parse tree
-	 */
-	void enterStat_block(course_workParser.Stat_blockContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link course_workParser#stat_block}.
-	 * @param ctx the parse tree
-	 */
-	void exitStat_block(course_workParser.Stat_blockContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link course_workParser#if_stat}.
 	 * @param ctx the parse tree
@@ -68,6 +48,16 @@ public interface course_workListener extends ParseTreeListener {
 	 */
 	void exitIf_stat(course_workParser.If_statContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link course_workParser#stat_block}.
+	 * @param ctx the parse tree
+	 */
+	void enterStat_block(course_workParser.Stat_blockContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link course_workParser#stat_block}.
+	 * @param ctx the parse tree
+	 */
+	void exitStat_block(course_workParser.Stat_blockContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link course_workParser#switch_stat}.
 	 * @param ctx the parse tree
 	 */
@@ -78,25 +68,25 @@ public interface course_workListener extends ParseTreeListener {
 	 */
 	void exitSwitch_stat(course_workParser.Switch_statContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link course_workParser#option}.
+	 * Enter a parse tree produced by {@link course_workParser#repeat_stat}.
 	 * @param ctx the parse tree
 	 */
-	void enterOption(course_workParser.OptionContext ctx);
+	void enterRepeat_stat(course_workParser.Repeat_statContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link course_workParser#option}.
+	 * Exit a parse tree produced by {@link course_workParser#repeat_stat}.
 	 * @param ctx the parse tree
 	 */
-	void exitOption(course_workParser.OptionContext ctx);
+	void exitRepeat_stat(course_workParser.Repeat_statContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link course_workParser#while_stat}.
+	 * Enter a parse tree produced by {@link course_workParser#declaration}.
 	 * @param ctx the parse tree
 	 */
-	void enterWhile_stat(course_workParser.While_statContext ctx);
+	void enterDeclaration(course_workParser.DeclarationContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link course_workParser#while_stat}.
+	 * Exit a parse tree produced by {@link course_workParser#declaration}.
 	 * @param ctx the parse tree
 	 */
-	void exitWhile_stat(course_workParser.While_statContext ctx);
+	void exitDeclaration(course_workParser.DeclarationContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code parExpr}
 	 * labeled alternative in {@link course_workParser#expr}.
@@ -157,18 +147,6 @@ public interface course_workListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitAdditiveExpr(course_workParser.AdditiveExprContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code minusExpr}
-	 * labeled alternative in {@link course_workParser#expr}.
-	 * @param ctx the parse tree
-	 */
-	void enterMinusExpr(course_workParser.MinusExprContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code minusExpr}
-	 * labeled alternative in {@link course_workParser#expr}.
-	 * @param ctx the parse tree
-	 */
-	void exitMinusExpr(course_workParser.MinusExprContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link course_workParser#atom}.
 	 * @param ctx the parse tree
@@ -239,18 +217,6 @@ public interface course_workListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitAndExprLogic(course_workParser.AndExprLogicContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code notExprLogic}
-	 * labeled alternative in {@link course_workParser#logic_expr}.
-	 * @param ctx the parse tree
-	 */
-	void enterNotExprLogic(course_workParser.NotExprLogicContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code notExprLogic}
-	 * labeled alternative in {@link course_workParser#logic_expr}.
-	 * @param ctx the parse tree
-	 */
-	void exitNotExprLogic(course_workParser.NotExprLogicContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code relationalExprLogic}
 	 * labeled alternative in {@link course_workParser#logic_expr}.

@@ -1,8 +1,6 @@
 package antlr4;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Set;
 
 public class Emitter {
 
@@ -36,8 +34,7 @@ public class Emitter {
     }
 
     public static void print(){
-        Set<String> keySet = variables.keySet();
-        for (String key : keySet) {
+        for (String key : variables.keySet()) {
             System.out.println(key+" "+variables.get(key));
         }
         System.out.println();

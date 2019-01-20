@@ -2,7 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1683a99-77f1-4b7f-9ef4-4599a0dba923" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/antlr4/Emitter.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/antlr4/Emitter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/antlr4/course_work.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/antlr4/course_work.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/antlr4/course_workBaseListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/antlr4/course_workBaseVisitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/antlr4/course_workLexer.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/antlr4/course_workLexer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/antlr4/course_workLexer.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/antlr4/course_workListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/antlr4/course_workParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/antlr4/course_workVisitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/antlr4/course_work.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/antlr4/course_work.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/array-init.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/antlr4/course_work.interp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/antlr4/course_work.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/antlr4/course_work.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/antlr4/course_work.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/antlr4/course_workLexer.interp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/antlr4/course_workLexer.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/antlr4/course_workLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/antlr4/course_workLexer.tokens" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,36 +34,48 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/antlr4/course_work.g4">
+        <entry file="file://$PROJECT_DIR$/gen/antlr4/Emitter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="35" column="282" selection-start-line="35" selection-start-column="282" selection-end-line="35" selection-end-column="282" />
+            <state relative-caret-position="135">
+              <caret line="31" column="57" selection-start-line="31" selection-start-column="57" selection-end-line="31" selection-end-column="57" />
               <folding>
-                <element signature="e#22#150#1" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#248#249#0" expanded="true" />
+                <element signature="e#289#290#0" expanded="true" />
+                <element signature="e#744#745#0" expanded="true" />
+                <element signature="e#785#786#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gen/antlr4/Emitter.java">
+        <entry file="file://$PROJECT_DIR$/gen/antlr4/course_workParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+            <state relative-caret-position="40">
+              <caret line="580" column="106" selection-start-line="580" selection-start-column="106" selection-end-line="580" selection-end-column="106" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="117">
+              <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/antlr4/course_work.g4">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="94" column="9" selection-start-line="94" selection-start-column="9" selection-end-line="94" selection-end-column="9" />
+              <folding>
+                <element signature="e#22#127#1" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -60,14 +92,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>exp</find>
-      <find>logic</find>
-      <find>log</find>
-      <find>atom</find>
-      <find>emitt</find>
-      <find>addC</find>
-      <find>op</find>
-      <find>LVA</find>
       <find>addCommand</find>
       <find>add</find>
       <find>option</find>
@@ -80,10 +104,37 @@
       <find>addVa</find>
       <find>emitter</find>
       <find>COLOB</find>
+      <find>INT4</find>
+      <find>TRUE</find>
+      <find>NO</find>
+      <find>FALSE</find>
+      <find>INTEGER_KW</find>
+      <find>FLOAT_KW</find>
+      <find>YEST</find>
+      <find>while_stat</find>
+      <find>WHILE</find>
+      <find>DO</find>
+      <find>repeat</find>
+      <find>op</find>
+      <find>expr</find>
+      <find>abd</find>
+      <find>PUSH</find>
+      <find>123</find>
+      <find>vas</find>
+      <find>PUSH a</find>
     </findStrings>
     <replaceStrings>
       <replace>add</replace>
       <replace>Emitter</replace>
+      <replace>INT5</replace>
+      <replace>YES</replace>
+      <replace>NO</replace>
+      <replace>NUMBER_KW</replace>
+      <replace>REAL_KW</replace>
+      <replace>NOT</replace>
+      <replace>repeat_stat</replace>
+      <replace>repeat</replace>
+      <replace>when</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -98,10 +149,10 @@
         <option value="$PROJECT_DIR$/gen/antlr4/visitor.java" />
         <option value="$PROJECT_DIR$/gen/antlr4/listener.java" />
         <option value="$PROJECT_DIR$/gen/antlr4/course_workLexer.java" />
-        <option value="$PROJECT_DIR$/gen/antlr4/course_workParser.java" />
         <option value="$PROJECT_DIR$/gen/antlr4/Emitter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/antlr4/course_work.g4" />
+        <option value="$PROJECT_DIR$/gen/antlr4/course_workParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/antlr4/course_work.g4" />
       </list>
     </option>
   </component>
@@ -117,16 +168,16 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="35" />
-    <option name="y" value="-20" />
-    <option name="width" value="1750" />
-    <option name="height" value="980" />
+    <option name="x" value="-8" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -183,11 +234,10 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547537855133" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547994929217" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
@@ -258,7 +308,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.27785236" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49756098" weight="0.18456376" />
       <window_info id="Structure" order="1" sideWeight="0.502439" side_tool="true" weight="0.295302" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -267,7 +317,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5892351" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.52124643" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.6203966" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -275,9 +325,9 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3286119" />
-      <window_info anchor="bottom" id="Tool Output" order="10" weight="0.25070822" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.19688386" />
-      <window_info anchor="bottom" id="ANTLR Preview" order="12" weight="0.796034" />
+      <window_info anchor="bottom" id="Tool Output" order="10" weight="0.26487252" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.703966" />
+      <window_info anchor="bottom" id="ANTLR Preview" order="12" weight="0.14730878" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24966443" />
@@ -287,6 +337,36 @@
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven" order="7" weight="0.3295302" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.18456376" />
+      <window_info id="Structure" order="1" sideWeight="0.502439" side_tool="true" weight="0.295302" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.6203966" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3286119" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3286119" />
+      <window_info anchor="bottom" id="Tool Output" order="10" weight="0.26487252" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.19688386" />
+      <window_info anchor="bottom" id="ANTLR Preview" order="12" weight="0.52124643" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24966443" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven" order="7" weight="0.3295302" />
+    </layout-to-restore>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="change grammar" />
@@ -299,12 +379,9 @@
     <entry file="file://$PROJECT_DIR$/gen/Hello.tokens" />
     <entry file="file://$PROJECT_DIR$/gen/HelloBaseListener.java" />
     <entry file="file://$PROJECT_DIR$/gen/HelloLexer.java" />
-    <entry file="file://$PROJECT_DIR$/../../WIP/course_work.g4" />
+    <entry file="file://$USER_HOME$/WIP/course_work.g4" />
     <entry file="file://$PROJECT_DIR$/gen/HelloWalker.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/antlr4/Hello.g4" />
-    <entry file="file://$PROJECT_DIR$/gen/antlr4/course_work.interp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/gen/antlr4/course_workListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -313,13 +390,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gen/antlr4/visitor.java" />
-    <entry file="file://$PROJECT_DIR$/gen/antlr4/course_workVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gen/antlr4/listener.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/antlr/antlr4-runtime/4.7/antlr4-runtime-4.7.jar!/org/antlr/v4/runtime/Parser.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -343,131 +413,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gen/antlr4/course_workParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="355" column="25" lean-forward="true" selection-start-line="355" selection-start-column="25" selection-end-line="355" selection-end-column="25" />
-          <folding>
-            <element signature="e#3274#3275#0" expanded="true" />
-            <element signature="e#3298#3299#0" expanded="true" />
-            <element signature="e#3348#3349#0" expanded="true" />
-            <element signature="e#3372#3373#0" expanded="true" />
-            <element signature="e#4075#4076#0" expanded="true" />
-            <element signature="e#4125#4126#0" expanded="true" />
-            <element signature="e#4160#4161#0" expanded="true" />
-            <element signature="e#4211#4212#0" expanded="true" />
-            <element signature="e#4280#4281#0" expanded="true" />
-            <element signature="e#4317#4318#0" expanded="true" />
-            <element signature="e#5964#5965#0" expanded="true" />
-            <element signature="e#6022#6023#0" expanded="true" />
-            <element signature="e#6064#6065#0" expanded="true" />
-            <element signature="e#6121#6122#0" expanded="true" />
-            <element signature="e#6157#6158#0" expanded="true" />
-            <element signature="e#6211#6212#0" expanded="true" />
-            <element signature="e#6255#6256#0" expanded="true" />
-            <element signature="e#6313#6314#0" expanded="true" />
-            <element signature="e#6355#6356#0" expanded="true" />
-            <element signature="e#6412#6413#0" expanded="true" />
-            <element signature="e#6557#6558#0" expanded="true" />
-            <element signature="e#6594#6595#0" expanded="true" />
-            <element signature="e#9104#9105#0" expanded="true" />
-            <element signature="e#9155#9156#0" expanded="true" />
-            <element signature="e#9197#9198#0" expanded="true" />
-            <element signature="e#9254#9255#0" expanded="true" />
-            <element signature="e#9329#9330#0" expanded="true" />
-            <element signature="e#9366#9367#0" expanded="true" />
-            <element signature="e#11963#11964#0" expanded="true" />
-            <element signature="e#12014#12015#0" expanded="true" />
-            <element signature="e#12056#12057#0" expanded="true" />
-            <element signature="e#12113#12114#0" expanded="true" />
-            <element signature="e#12187#12188#0" expanded="true" />
-            <element signature="e#12224#12225#0" expanded="true" />
-            <element signature="e#13938#13939#0" expanded="true" />
-            <element signature="e#13990#13991#0" expanded="true" />
-            <element signature="e#14101#14102#0" expanded="true" />
-            <element signature="e#14152#14153#0" expanded="true" />
-            <element signature="e#14226#14227#0" expanded="true" />
-            <element signature="e#14263#14264#0" expanded="true" />
-            <element signature="e#16050#16051#0" expanded="true" />
-            <element signature="e#16107#16108#0" expanded="true" />
-            <element signature="e#16234#16235#0" expanded="true" />
-            <element signature="e#16290#16291#0" expanded="true" />
-            <element signature="e#16337#16338#0" expanded="true" />
-            <element signature="e#16394#16395#0" expanded="true" />
-            <element signature="e#16540#16541#0" expanded="true" />
-            <element signature="e#16577#16578#0" expanded="true" />
-            <element signature="e#18347#18348#0" expanded="true" />
-            <element signature="e#18398#18399#0" expanded="true" />
-            <element signature="e#18600#18601#0" expanded="true" />
-            <element signature="e#18652#18653#0" expanded="true" />
-            <element signature="e#18691#18692#0" expanded="true" />
-            <element signature="e#18744#18745#0" expanded="true" />
-            <element signature="e#18819#18820#0" expanded="true" />
-            <element signature="e#18856#18857#0" expanded="true" />
-            <element signature="e#20567#20568#0" expanded="true" />
-            <element signature="e#20618#20619#0" expanded="true" />
-            <element signature="e#20735#20736#0" expanded="true" />
-            <element signature="e#20792#20793#0" expanded="true" />
-            <element signature="e#20862#20863#0" expanded="true" />
-            <element signature="e#20899#20900#0" expanded="true" />
-            <element signature="e#22501#22502#0" expanded="true" />
-            <element signature="e#22558#22559#0" expanded="true" />
-            <element signature="e#22673#22674#0" expanded="true" />
-            <element signature="e#22730#22731#0" expanded="true" />
-            <element signature="e#22804#22805#0" expanded="true" />
-            <element signature="e#22841#22842#0" expanded="true" />
-            <element signature="e#24532#24533#0" expanded="true" />
-            <element signature="e#24569#24570#0" expanded="true" />
-            <element signature="e#24701#24702#0" expanded="true" />
-            <element signature="e#24729#24730#0" expanded="true" />
-            <element signature="e#24897#24898#0" expanded="true" />
-            <element signature="e#24948#24949#0" expanded="true" />
-            <element signature="e#25845#25846#0" expanded="true" />
-            <element signature="e#25896#25897#0" expanded="true" />
-            <element signature="e#26694#26695#0" expanded="true" />
-            <element signature="e#26744#26745#0" expanded="true" />
-            <element signature="e#26779#26780#0" expanded="true" />
-            <element signature="e#26830#26831#0" expanded="true" />
-            <element signature="e#27761#27762#0" expanded="true" />
-            <element signature="e#27812#27813#0" expanded="true" />
-            <element signature="e#29332#29333#0" expanded="true" />
-            <element signature="e#29382#29383#0" expanded="true" />
-            <element signature="e#29417#29418#0" expanded="true" />
-            <element signature="e#29468#29469#0" expanded="true" />
-            <element signature="e#34800#34801#0" expanded="true" />
-            <element signature="e#34837#34838#0" expanded="true" />
-            <element signature="e#36444#36445#0" expanded="true" />
-            <element signature="e#36481#36482#0" expanded="true" />
-            <element signature="e#36631#36632#0" expanded="true" />
-            <element signature="e#36659#36660#0" expanded="true" />
-            <element signature="e#36850#36851#0" expanded="true" />
-            <element signature="e#36907#36908#0" expanded="true" />
-            <element signature="e#37772#37773#0" expanded="true" />
-            <element signature="e#37828#37829#0" expanded="true" />
-            <element signature="e#37875#37876#0" expanded="true" />
-            <element signature="e#37932#37933#0" expanded="true" />
-            <element signature="e#39591#39592#0" expanded="true" />
-            <element signature="e#39641#39642#0" expanded="true" />
-            <element signature="e#39676#39677#0" expanded="true" />
-            <element signature="e#39727#39728#0" expanded="true" />
-            <element signature="e#40684#40685#0" expanded="true" />
-            <element signature="e#40740#40741#0" expanded="true" />
-            <element signature="e#40787#40788#0" expanded="true" />
-            <element signature="e#40844#40845#0" expanded="true" />
-            <element signature="e#41777#41778#0" expanded="true" />
-            <element signature="e#41834#41835#0" expanded="true" />
-            <element signature="e#42637#42638#0" expanded="true" />
-            <element signature="e#42687#42688#0" expanded="true" />
-            <element signature="e#42722#42723#0" expanded="true" />
-            <element signature="e#42773#42774#0" expanded="true" />
-            <element signature="e#43885#43886#0" expanded="true" />
-            <element signature="e#43942#43943#0" expanded="true" />
-            <element signature="e#49443#49444#0" expanded="true" />
-            <element signature="e#49480#49481#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gen/antlr4/course_workLexer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -481,10 +426,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/gen/antlr4/course_work.interp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen/antlr4/course_workBaseVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen/antlr4/course_workVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1938">
+          <caret line="137" column="13" selection-start-line="137" selection-start-column="13" selection-end-line="137" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/gen/antlr4/Emitter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+        <state relative-caret-position="135">
+          <caret line="31" column="57" selection-start-line="31" selection-start-column="57" selection-end-line="31" selection-end-column="57" />
+          <folding>
+            <element signature="e#248#249#0" expanded="true" />
+            <element signature="e#289#290#0" expanded="true" />
+            <element signature="e#744#745#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen/antlr4/course_workParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="580" column="106" selection-start-line="580" selection-start-column="106" selection-end-line="580" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -493,20 +485,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/antlr4/course_work.g4">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="35" column="282" selection-start-line="35" selection-start-column="282" selection-end-line="35" selection-end-column="282" />
+        <state relative-caret-position="221">
+          <caret line="94" column="9" selection-start-line="94" selection-start-column="9" selection-end-line="94" selection-end-column="9" />
           <folding>
-            <element signature="e#22#150#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#22#127#1" expanded="true" />
           </folding>
         </state>
       </provider>

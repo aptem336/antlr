@@ -1,4 +1,4 @@
-// Generated from C:/Users/Artem/OneDrive/CODE/_GIT/antlr/src/main/java/antlr4\course_work.g4 by ANTLR 4.7.2
+// Generated from C:/Users/Artem/OneDrive/WORK/Âàñèëèé/ÒèÏÑ/ÒèÏÑ_Ê/antlr/src/main/java/antlr4\course_work.g4 by ANTLR 4.7.2
 package antlr4;
 
 import org.antlr.v4.runtime.ParserRuleContext;
@@ -40,18 +40,6 @@ public class course_workBaseListener implements course_workListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterDeclaration(course_workParser.DeclarationContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitDeclaration(course_workParser.DeclarationContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
 	@Override public void enterAssignment(course_workParser.AssignmentContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -59,18 +47,6 @@ public class course_workBaseListener implements course_workListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitAssignment(course_workParser.AssignmentContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterStat_block(course_workParser.Stat_blockContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitStat_block(course_workParser.Stat_blockContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -88,6 +64,18 @@ public class course_workBaseListener implements course_workListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterStat_block(course_workParser.Stat_blockContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitStat_block(course_workParser.Stat_blockContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterSwitch_stat(course_workParser.Switch_statContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -100,25 +88,25 @@ public class course_workBaseListener implements course_workListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterOption(course_workParser.OptionContext ctx) { }
+	@Override public void enterRepeat_stat(course_workParser.Repeat_statContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitOption(course_workParser.OptionContext ctx) { }
+	@Override public void exitRepeat_stat(course_workParser.Repeat_statContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterWhile_stat(course_workParser.While_statContext ctx) { }
+	@Override public void enterDeclaration(course_workParser.DeclarationContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitWhile_stat(course_workParser.While_statContext ctx) { }
+	@Override public void exitDeclaration(course_workParser.DeclarationContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -179,18 +167,6 @@ public class course_workBaseListener implements course_workListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitAdditiveExpr(course_workParser.AdditiveExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterMinusExpr(course_workParser.MinusExprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitMinusExpr(course_workParser.MinusExprContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -263,18 +239,6 @@ public class course_workBaseListener implements course_workListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitAndExprLogic(course_workParser.AndExprLogicContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterNotExprLogic(course_workParser.NotExprLogicContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitNotExprLogic(course_workParser.NotExprLogicContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

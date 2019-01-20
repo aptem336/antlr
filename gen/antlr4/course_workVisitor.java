@@ -1,4 +1,4 @@
-// Generated from C:/Users/Artem/OneDrive/CODE/_GIT/antlr/src/main/java/antlr4\course_work.g4 by ANTLR 4.7.2
+// Generated from C:/Users/Artem/OneDrive/WORK/Âàñèëèé/ÒèÏÑ/ÒèÏÑ_Ê/antlr/src/main/java/antlr4\course_work.g4 by ANTLR 4.7.2
 package antlr4;
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
@@ -23,23 +23,11 @@ public interface course_workVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitStat(course_workParser.StatContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link course_workParser#declaration}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitDeclaration(course_workParser.DeclarationContext ctx);
-	/**
 	 * Visit a parse tree produced by {@link course_workParser#assignment}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
 	T visitAssignment(course_workParser.AssignmentContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link course_workParser#stat_block}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitStat_block(course_workParser.Stat_blockContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link course_workParser#if_stat}.
 	 * @param ctx the parse tree
@@ -47,23 +35,29 @@ public interface course_workVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitIf_stat(course_workParser.If_statContext ctx);
 	/**
+	 * Visit a parse tree produced by {@link course_workParser#stat_block}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitStat_block(course_workParser.Stat_blockContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link course_workParser#switch_stat}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
 	T visitSwitch_stat(course_workParser.Switch_statContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link course_workParser#option}.
+	 * Visit a parse tree produced by {@link course_workParser#repeat_stat}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitOption(course_workParser.OptionContext ctx);
+	T visitRepeat_stat(course_workParser.Repeat_statContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link course_workParser#while_stat}.
+	 * Visit a parse tree produced by {@link course_workParser#declaration}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitWhile_stat(course_workParser.While_statContext ctx);
+	T visitDeclaration(course_workParser.DeclarationContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code parExpr}
 	 * labeled alternative in {@link course_workParser#expr}.
@@ -99,13 +93,6 @@ public interface course_workVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitAdditiveExpr(course_workParser.AdditiveExprContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code minusExpr}
-	 * labeled alternative in {@link course_workParser#expr}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitMinusExpr(course_workParser.MinusExprContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link course_workParser#atom}.
 	 * @param ctx the parse tree
@@ -147,13 +134,6 @@ public interface course_workVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitAndExprLogic(course_workParser.AndExprLogicContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code notExprLogic}
-	 * labeled alternative in {@link course_workParser#logic_expr}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitNotExprLogic(course_workParser.NotExprLogicContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code relationalExprLogic}
 	 * labeled alternative in {@link course_workParser#logic_expr}.
