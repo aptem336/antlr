@@ -20,7 +20,7 @@ stat
  ;
 
 assignment
- : ID LTEQ (expr | logic_expr) {Emitter.addLine("LVALUE "+_localctx.ID().getText());Emitter.addLine(":=");} SCOL
+ : ID {Emitter.addLine("LVALUE "+_localctx.ID().getText());} LTEQ (expr | logic_expr) {Emitter.addLine(":=");} SCOL
  ;
 
 if_stat
