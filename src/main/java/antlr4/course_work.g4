@@ -50,7 +50,7 @@ REPEAT : 'repeat';
 WHEN: 'when';
 
 declaration
- : {String type="";}(NUMBER_KW{type="DW";}|REAL_KW{type="DD";}|CHAR_KW{type="DB";}|BOOLEAN_KW{type="DW";}) ID {String name=_localctx.ID().getText();Emitter.addVariable(name, type);} (LTEQ (expr | logic_expr) {Emitter.addLine("LVALUE "+_localctx.ID().getText());Emitter.addLine(":=");})? SCOL
+ : {String type="";}(NUMBER_KW{type="DW";}|REAL_KW{type="DD";}|CHAR_KW{type="DB";}|BOOLEAN_KW{type="DW";}) ID {String name=_localctx.ID().getText();Emitter.addVariable(name, type);} ({Emitter.addLine("LVALUE "+_localctx.ID().getText());} LTEQ (expr | logic_expr) {Emitter.addLine(":=");})? SCOL
  ;
 
 NUMBER_KW : 'number';

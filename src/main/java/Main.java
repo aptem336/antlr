@@ -7,7 +7,9 @@ import org.antlr.v4.runtime.CommonTokenStream;
 public class Main {
 
     public static void main(String ... args){
-        String source = "switch a1a {" +
+        String source = "" +
+                "a1a<=1;" +
+                "switch a1a {" +
                 "by 1: a1a<=a1a+1;" +
                 "by 2: a1a<=a1a+1;" +
                 "}";;
