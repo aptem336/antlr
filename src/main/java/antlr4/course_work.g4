@@ -78,7 +78,7 @@ atom
 logic_expr
  : OPAR logic_expr CPAR #parExprLogic
  | expr op=(LTEQ | GTEQ | LT | GT) expr {Emitter.addLine(((RelationalExprLogicContext) _localctx).op.getText());} #relationalExprLogic
- | expr op=(EQ | NEQ) expr {Emitter.addLine(((RelationalExprLogicContext) _localctx).op.getText());} #equalityExprLogic
+ | expr op=(EQ | NEQ) expr {Emitter.addLine(((EqualityExprLogicContext) _localctx).op.getText());} #equalityExprLogic
  | logic_expr AND logic_expr {Emitter.addLine("AND");} #andExprLogic
  | logic_expr OR logic_expr {Emitter.addLine("OR");} #orExprLogic
  | logic_atom {Emitter.addLine("PUSH "+_localctx.getText());} #atomExprLogic

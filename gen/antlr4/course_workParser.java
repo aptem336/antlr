@@ -1,4 +1,4 @@
-// Generated from C:/Users/Artem/OneDrive/WORK/Василий/ТиПС/ТиПС_К/antlr/src/main/java/antlr4\course_work.g4 by ANTLR 4.7.2
+// Generated from D:/OneDrive/CODE/_GIT/antlr/src/main/java/antlr4\course_work.g4 by ANTLR 4.7.2
 package antlr4;
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
@@ -1337,7 +1337,7 @@ public class course_workParser extends Parser {
 				}
 				setState(166);
 				expr(0);
-				Emitter.addLine(((RelationalExprLogicContext) _localctx).op.getText());
+				Emitter.addLine(((EqualityExprLogicContext) _localctx).op.getText());
 				}
 				break;
 			case 4:
