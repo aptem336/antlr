@@ -7,7 +7,7 @@ int repeat_label_counter = 0;
 }
 
 programm
- : stat* {Emitter.addLine("HALT");}
+ : stat* {Emitter.addLine("HALT");} EOF
  ;
 
 stat

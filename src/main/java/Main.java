@@ -8,11 +8,7 @@ public class Main {
 
     public static void main(String ... args){
         String source = "" +
-                "a1a<=1;" +
-                "switch a1a {" +
-                "by 1: a1a<=a1a+1;" +
-                "by 2: a1a<=a1a+1;" +
-                "}";;
+                "? a1a > 100 # a1a<=a1a-b1b; : a1a<=a1a+b1b";
         course_workLexer lexer = new course_workLexer(CharStreams.fromString(source));
         CommonTokenStream tokens = new CommonTokenStream(lexer);
         course_workParser parser = new course_workParser(tokens);
